@@ -8,7 +8,7 @@ const Table = ({contact }) => {
     const handleDelete = (id) => {
         if (window.confirm("Do you want to delete this contact?")) {
           //setContacts(contacts.filter((contact) => contact.id !== id));
-          contactDispatch({type:contactActions.delete,paylod:{id:id}})
+          contactDispatch({type:contactActions.delete,payload:{id:id}})
         }
       };
     const handleFavorite = (id) => {
